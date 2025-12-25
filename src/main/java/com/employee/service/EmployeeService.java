@@ -146,7 +146,11 @@ public class EmployeeService {
 		// TODO Auto-generated method stub
 		return er.getByDept(dept);
 	}
-	
+	public Employee getnum() {
+		// TODO Auto-generated method stub
+		return er.findAll().stream().min(Comparator.comparing(Employee::getSalary)).get();
+	}
+
 
 
 }

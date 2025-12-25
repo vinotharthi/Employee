@@ -55,6 +55,10 @@ public class EmployeeController {
 	public List<Employee> getquery() {
 		return es.getquery();
 	}
+	@GetMapping("getnum")
+	public Employee getnum(){
+		return es.getnum();
+	}
 	//-------------------------------Streams--------------------------
 	@GetMapping(value="/getMd")
 	public List<String> getmeed() {
